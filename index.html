@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="shortcut icon" href="src/images/logocortada.svg" type="image/x-icon">
     <title>Voltare Tech</title>
 </head>
@@ -18,7 +19,24 @@
 <header class="header">
     <div class="header-content">
         <img src="src/images/logocompleta.svg" alt="Logo Voltare Tech" class="logo">
-        <a class="btn-custom">Fale conosco</a>
+        
+        <div class="nav-wrapper">
+            <ul class="header-list">
+                <li class="header-item"> <a href="">Home</a></li>
+                <li class="header-item"> <a href="">Serviços</a></li>
+                <li class="header-item"> <a href="">Sobre nós</a></li>
+                <li class="mobile-only">
+                    <a class="btn-custom">Fale conosco</a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="menu-toggle">
+            <i class="fas fa-bars menu-icon"></i>
+            <i class="fas fa-times close-icon"></i>
+        </div>
+        
+        <a class="btn-custom desktop-only">Fale conosco</a>
     </div>
 </header>
 

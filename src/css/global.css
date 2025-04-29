@@ -1,4 +1,4 @@
- body {
+body {
     background-color: #ffffff;
     height: 100vh;
     width: 100%;
@@ -6,6 +6,7 @@
     overflow: hidden;
 }
 
+/* Estilos para o header */
 .header {
     width: 100%;
     padding: 0;
@@ -33,6 +34,70 @@
     box-shadow: 0 8px 32px rgba(18, 19, 18, 0.123);
 }
 
+.header-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
+}
+
+.header-item a {
+    color: #757575;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.header-item:hover {
+    color: var(--cor-principal);
+}
+
+.header-item a:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--cor-principal);
+    transition: width 0.3s ease;
+}
+
+.header-item a:hover:after {
+    width: 100%;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 22px;
+    color: var(--cor-principal);
+    z-index: 1001;
+}
+
+.menu-toggle .close-icon {
+    display: none;
+}
+
+.menu-toggle.active .menu-icon {
+    display: none;
+}
+
+.menu-toggle.active .close-icon {
+    display: block;
+}
+
+.desktop-only {
+    display: block;
+}
+
+.mobile-only {
+    display: none;
+}
+
 .btn-custom {
     background-color: var(--cor-principal);
     color: #fff;
@@ -57,7 +122,6 @@
     box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2);
     border: 1px solid rgba(0, 255, 13, 0.18);
 }
-
 
 /* Estilos para o fundo */
 .background-animated {

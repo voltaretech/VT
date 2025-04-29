@@ -14,3 +14,7 @@
   --cor-neutra: #F5F5F5; 
   --cor-de-destaque: #1E1E1E; 
 }
+
+a {
+  text-decoration: none;
+}
