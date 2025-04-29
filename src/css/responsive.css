@@ -31,6 +31,27 @@
     .grid-lines {
         background-size: 30px 30px;
     }
+
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-content {
+        max-width: 100%;
+    }
+    
+    .hero-title {
+        font-size: 2.8rem;
+    }
+    
+    .hero-buttons {
+        justify-content: center;
+    }
+    
+    .device-mockup {
+        max-width: 280px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -59,6 +80,31 @@
 
     .pattern {
         opacity: 0.5;
+    }
+
+    .hero {
+        padding-top: 100px;
+    }
+    
+    .hero-title {
+        font-size: 2.3rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+    }
+    
+    .btn-primary, .btn-secondary {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+    
+    .floating-elements {
+        opacity: 0.6;
+    }
+
+    .device-mockup {
+        max-width: 250px;
     }
 }
 
@@ -150,6 +196,23 @@
     .grid-lines {
         background-size: 25px 25px;
     }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-description {
+        font-size: 0.9rem;
+    }
+    
+    .btn-primary, .btn-secondary {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+    
+    .device-mockup {
+        max-width: 220px;
+    }
 }
 
 @media screen and (max-width: 420px) {
@@ -173,6 +236,10 @@
     
     .logo {
         height: 24px;
+    }
+
+    .device-mockup {
+        max-width: 200px;
     }
 }
 @media screen and (max-width: 768px) {
