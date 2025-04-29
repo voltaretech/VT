@@ -80,15 +80,15 @@ body {
     z-index: 1001;
 }
 
-.menu-toggle .close-icon {
+.menu-toggle .fa-toggle-on {
     display: none;
 }
 
-.menu-toggle.active .menu-icon {
+.menu-toggle.active .fa-toggle-off {
     display: none;
 }
 
-.menu-toggle.active .close-icon {
+.menu-toggle.active .fa-toggle-on {
     display: block;
 }
 
