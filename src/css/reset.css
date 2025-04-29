@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --cor-principal: #4CAE00;
+  --cor-complementar-escura: #388E00;
+  --cor-complementar-clara: #A8E04D;
+  --cor-blur: #4bae006e;
+  
+  --cor-neutra: #F5F5F5; 
+  --cor-de-destaque: #1E1E1E; 
+}
