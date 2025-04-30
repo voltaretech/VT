@@ -357,28 +357,3 @@ body {
     50% { transform: scale(1.1); }
     100% { transform: scale(1); }
 }
-
-/* Estilos para a section partners */
-
-.partners {
-    background-color: var(--cor-complementar-clara);
-    padding: 2rem 0;
-}
-
-.partners-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
-}
-
-.partners-logos {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-
-.partner-logo {
-    height: 45px;
-}
