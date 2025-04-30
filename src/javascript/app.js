@@ -152,3 +152,27 @@ if (mobileButton) {
     headerList.classList.remove("active");
   });
 }
+
+const scrollTopButton = document.querySelector('.scroll-top');
+
+function toggleScrollButton() {
+    if (window.pageYOffset > 300) {
+        scrollTopButton.classList.add('visible');
+    } else {
+        scrollTopButton.classList.remove('visible');
+    }
+}
+
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
+
+scrollTopButton.addEventListener('click', scrollToTop);
+
+window.addEventListener('scroll', toggleScrollButton);
+
+document.addEventListener('DOMContentLoaded', toggleScrollButton);
