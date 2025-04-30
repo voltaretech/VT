@@ -970,3 +970,80 @@ body {
     50% { transform: scale(1.1); }
     100% { transform: scale(1); }
 }
+
+/* Estilos para o footer */
+
+.footer {
+    background-color: white;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 20px 0;
+    width: 100%;
+    box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.03);
+}
+
+.footer-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, var(--cor-principal), var(--cor-complementar-clara));
+    color: white;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(15, 179, 0, 0.2);
+}
+
+.footer-social a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(15, 179, 0, 0.3);
+}
+
+.footer-info {
+    text-align: center;
+    color: #555;
+    font-size: 0.85rem;
+}
+
+.footer-info p {
+    margin: 3px 0;
+}
+
+.footer-links a {
+    color: var(--cor-principal);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.footer-links a:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: var(--cor-principal);
+    transition: width 0.3s ease;
+}
+
+.footer-links a:hover:after {
+    width: 100%;
+}

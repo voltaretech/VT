@@ -232,6 +232,23 @@
         margin-bottom: 15px;
     }
 
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .footer-social {
+        order: 1;
+    }
+    
+    .footer-info {
+        order: 2;
+    }
+    
+    .footer-links {
+        order: 3;
+    }
+
 }
 
 @media (max-width: 650px) {
