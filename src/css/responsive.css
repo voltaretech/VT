@@ -91,6 +91,18 @@
     .diferencial-content {
         max-width: 100%;
     }
+
+    .about-us-content {
+        flex-direction: column;
+    }
+    
+    .about-us-image {
+        margin: 0 auto 40px;
+    }
+    
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -199,6 +211,27 @@
     .diferencial-item {
         margin-bottom: 60px;
     }
+
+    .about-us {
+        padding: 70px 0;
+    }
+    
+    .about-us-header .section-title {
+        font-size: 2.5rem;
+    }
+    
+    .about-us-quote blockquote p {
+        font-size: 1.2rem;
+    }
+    
+    .mvv-item {
+        flex-direction: column;
+    }
+    
+    .mvv-icon {
+        margin-bottom: 15px;
+    }
+
 }
 
 @media (max-width: 650px) {
@@ -321,6 +354,18 @@
         width: 55%;
         font-size: 16px;
     }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-us-header .section-title {
+        font-size: 2rem;
+    }
+    
+    .about-us-quote {
+        padding: 30px 20px;
+    }
 }
 
 @media screen and (max-width: 420px) {
@@ -392,5 +437,9 @@
     
     .diferencial-text h3 {
         font-size: 1.2rem;
+    }
+
+    .diferenciais .btn-primary {
+        text-align: center;
     }
 }

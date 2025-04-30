@@ -129,11 +129,26 @@ for (let i = 0; i < 50; i++) {
 }
 });
 
-// Toggle do menu mobile
-    const menuToggle = document.querySelector('.menu-toggle');
-    const headerList = document.querySelector('.header-list');
-    
-    menuToggle.addEventListener('click', () => {
-        menuToggle.classList.toggle('active');
-        headerList.classList.toggle('active');
-    });
+const menuToggle = document.querySelector(".menu-toggle");
+const headerList = document.querySelector(".header-list");
+const headerItems = document.querySelectorAll(".header-item a");
+
+menuToggle.addEventListener("click", () => {
+  menuToggle.classList.toggle("active");
+  headerList.classList.toggle("active");
+});
+
+headerItems.forEach((item) => {
+  item.addEventListener("click", () => {
+    menuToggle.classList.remove("active");
+    headerList.classList.remove("active");
+  });
+});
+
+const mobileButton = document.querySelector(".mobile-only .btn-custom");
+if (mobileButton) {
+  mobileButton.addEventListener("click", () => {
+    menuToggle.classList.remove("active");
+    headerList.classList.remove("active");
+  });
+}
