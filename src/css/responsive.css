@@ -7,6 +7,11 @@
     .grid-lines {
         background-size: 40px 40px;
     }
+
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -51,6 +56,14 @@
     
     .device-mockup {
         max-width: 280px;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .section-title {
+        font-size: 2.5rem;
     }
 }
 
@@ -117,6 +130,29 @@
         50% { transform: scale(1.02); opacity: 0.6; }
         100% { transform: scale(1); opacity: 0.4; }
     }
+
+    .services {
+        padding: 60px 0;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .service-card {
+        padding: 25px;
+    }
+    
+    .services-cta {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
 }
 
 @media (max-width: 650px) {
@@ -179,6 +215,11 @@
     .mobile-only .btn-custom {
         display: inline-block;
     }
+
+    .btn-primary-service {
+        width: 55%;
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -229,6 +270,11 @@
     .device-mockup {
         max-width: 220px;
     }
+
+    .btn-primary-service {
+        width: 55%;
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 420px) {
@@ -262,5 +308,20 @@
 
     .device-mockup {
         max-width: 200px;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .service-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 20px;
+    }
+
+    .btn-primary-service {
+        width: 85%;
+        font-size: 12px;
     }
 }
