@@ -297,6 +297,25 @@
         top: -10px;
         right: 10px;
     }
+
+    .reviews-qrcode-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .reviews-qrcode-text {
+        order: 1;
+    }
+    
+    .qrcode-image {
+        order: 0;
+        margin-bottom: 20px;
+    }
+    
+    .rating-stars {
+        justify-content: center;
+    }
 }
 
 @media (max-width: 650px) {
